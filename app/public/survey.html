@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <title>Friend Finder Survey</title>
+</head>
+
+<body>
+        <select>
+                <option value="volvo">Volvo</option>
+                
+        </select>
+    <!-- <div class="container">
+
+            
+                    <select>
+                      <option value="" disabled selected>Choose your option</option>
+                      <option value="1">Option 1</option>
+                      <option value="2">Option 2</option>
+                      <option value="3">Option 3</option>
+                    </select>
+                    <label>Materialize Select</label>
+                    
+            <div class="card">
+                    <div class="card-content">
+                      <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+                    </div>
+                    <div class="input-field col s12">
+                            <select>
+                              <option value="" disabled selected>Choose your option</option>
+                              <option value="1">Option 1</option>
+                              <option value="2">Option 2</option>
+                              <option value="3">Option 3</option>
+                            </select>
+                            <label>Materialize Select</label>
+                          </div>
+                  </div>
+        <ul class="collection">
+                
+
+            <li class="collection-item avatar">
+                <i class="material-icons circle red">Q1</i>
+                <span class="title">Your mind is always buzzing with unexplored ideas and plans?</span>
+                
+            </li>
+            <li class="collection-item avatar">
+                <i class="material-icons circle red">Q2</i>
+                <span class="title">Generally speaking, you rely more on your experience than your imagination? </span>
+                <select class="chosen-select" id="q2">
+                    <option value=""></option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </li>
+            <li class="collection-item avatar">
+                <i class="material-icons circle red">Q3</i>
+                <span class="title">You find it easy to stay relaxed and focused even when there is some pressure?
+                </span>
+                <select class="chosen-select" id="q3">
+                    <option value=""></option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </li>
+            <li class="collection-item avatar">
+                <i class="material-icons circle red">Q4</i>
+                <span class="title">You rarely do something just out of sheer curiosity?</span>
+                <select class="chosen-select" id="q4">
+                    <option value=""></option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+
+            </li>
+            <li class="collection-item avatar">
+                <i class="material-icons circle red">Q5</i>
+                <span class="title">People can rarely upset you</span>
+                <select class="chosen-select" id="q5">
+                    <option value=""></option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+
+            </li>
+            <li class="collection-item avatar">
+                <i class="material-icons circle red">Q6</i>
+                <span class="title">It is often difficult for you to relate to other people’s feelings?</span>
+                <select class="chosen-select" id="q6">
+                    <option value=""></option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+
+            </li>
+            <li class="collection-item avatar">
+                <i class="material-icons circle red">Q7</i>
+                <span class="title">In a discussion, truth should be more important than people’s sensitivities?</span>
+                <select class="chosen-select" id="q7">
+                    <option value=""></option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+
+            </li>
+            <li class="collection-item avatar">
+                <i class="material-icons circle red">Q8</i>
+                <span class="title">You rarely get carried away by fantasies and ideas?</span>
+                <select class="chosen-select" id="q8">
+                    <option value=""></option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+
+            </li>
+            <li class="collection-item avatar">
+                <i class="material-icons circle red">Q9</i>
+                <span class="title">You think that everyone’s views should be respected regardless of whether they are
+                    supported by facts or not?</span>
+                <select class="chosen-select" id="q9">
+                    <option value=""></option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </li>
+            <li class="collection-item avatar">
+                <i class="material-icons circle red">Q10</i>
+                <span class="title">You feel more energetic after spending time with a group of people?</span>
+                <select class="chosen-select" id="q10">
+                    <option value=""></option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </li>
+
+        </ul>
+
+    </div> -->
+
+</body>
+
+</html>
