@@ -9,21 +9,45 @@ module.exports = function (app) {
     res.json(friendsData);
   });
 
-  // Create New Characters - takes in JSON input
-  // app.post("/api/friends", function(req, res) {
-  //     // req.body hosts is equal to the JSON post sent from the user
-  //     // This works because of our body parsing middleware
-  //     var newcharacter = req.body;
+  // Create New frind - takes in JSON input
+  app.post("/api/friends", function (req, res) {
 
-  //     // Using a RegEx Pattern to remove spaces from newCharacter
-  //     // You can read more about RegEx Patterns later https://www.regexbuddy.com/regex.html
-  //     newcharacter.routeName = newcharacter.name.replace(/\s+/g, "").toLowerCase();
+    var difference = 40;
+    var name = '';
+    var photo = '';
+    var newFriend = req.body;
 
-  //     console.log(newcharacter);
+    friendsData.forEach(function (friends) {
+      
+      var matchedScores = [];
+      var totalDifference = 40;
+      
+      function getsum(total, num) {
+        return total + num;
+      }
 
-  //     characters.push(newcharacter);
+      for (var i = 0; i < friends.scores.length; i++) {
+        matchedScores.push(Math.abs(parseInt(newFriend.scores[i]) - parseInt(friends.scores[i])));
+      }
 
-  //     res.json(newcharacter);
-  //   });
+      totalDifference = matchedScores.reduce(getsum);
+
+      if (totalDifference < difference) {
+        
+        difference = totalDifference;
+        name = friends.name;
+        photo = friends.photo;
+      }
+    });
+
+    res.json({
+      name: name,
+      photo: photo
+    });
+
+    friendsData.push(newFriend);
+
+
+  });
 
 };
