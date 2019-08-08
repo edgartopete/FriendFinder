@@ -11,7 +11,7 @@ module.exports = function (app) {
   });
 
   app.get("/api/fin", function (req, res) {
-    res.json(friendsData);
+    res.json(financialData);
   });
 
   // Create New frind - takes in JSON input
