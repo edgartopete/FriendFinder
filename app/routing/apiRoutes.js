@@ -1,11 +1,16 @@
 var path = require("path");
 var friendsData = require("../data/friends.js");
+var financialData = require("../data/fin.js");
 
 
 module.exports = function (app) {
 
   // Displays a single character, or returns false
   app.get("/api/friends", function (req, res) {
+    res.json(financialData);
+  });
+
+  app.get("/api/fin", function (req, res) {
     res.json(friendsData);
   });
 
